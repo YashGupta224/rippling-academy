@@ -7,13 +7,15 @@ import AllFilter from './All_filters';
 
 const Button = (props) => {
     console.log("Button");
-    const [list, setList] = useState(JSON.parse(window.localStorage.getItem('Expenses')));
+    const prev_list = JSON.parse(window.localStorage.getItem('Expenses'));
+    const [list, setList] = useState([]);
     const [bugdet, setBugdet] = useState("");
     const changebugdet = (e) => setBugdet(e.target.value);
 
     useEffect(() => {
         const data = window.localStorage.getItem('Bugdet');
         if (data) setBugdet(data);
+        if (prev_list) setList(prev_list);
     }, [])
     useEffect(() => {
         window.localStorage.setItem('Bugdet', bugdet);
