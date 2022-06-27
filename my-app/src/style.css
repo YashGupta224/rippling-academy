@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    height: 200vh;
+    background-color: aliceblue;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#card,
+#button {
+    height: 30px;
+    padding: 4px;
+    margin: 4px;
+    background-color: rgb(45, 122, 255);
+    border-radius: 4px;
+    color: aliceblue;
+}
+
+.lable {
+    display: flex;
+}
+
+#lname,
+#lamount,
+#lbugdet {
+    height: 25px;
+    padding: 4px;
+    display: flex;
+    background-color: rgb(219, 219, 219);
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 2px;
+
+}
+
+
+#name,
+#amount,
+#date,
+#bugdet {
+    height: 25px;
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 2px;
+    background-color: aliceblue;
+}
+
+.line {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.head {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.width_100 {
+    width: 100%;
+}
