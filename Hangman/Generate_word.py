@@ -1,3 +1,12 @@
+import random
+
+
 class GenerateWord:
-    def get_word(self):
-        return "randomword"
+    with open("sowpods.txt", "r") as f:
+        line = f.readlines()
+
+    @classmethod
+    def get_random_word(cls) -> str:
+        word = random.choice(cls.line).strip()
+        word = word.lower()
+        return word
