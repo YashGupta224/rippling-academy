@@ -1,0 +1,1 @@
+Command to run project "python3 hangman.py" in terminal
